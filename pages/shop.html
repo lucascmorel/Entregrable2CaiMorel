@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=REM&display=swap" rel="stylesheet">
+
+    <title>Mike Tyosn - SHOP</title>
+</head>
+<body class="body-s">
+
+    <!--HEADER-->
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg fixed-top bgnav border-bottom border-dark border-3">
+          <div class="container-fluid nav-item">
+            <!--nombre-->
+            <a class="navbar-brand" href="../index.html">Mike Tyson</a>
+            <!--botón hamburguesa-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--menú-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./shop.html">SHOP</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    <!--MAIN-->
+    <main class="main-s container mt-5">
+      <div class="main-s__h1 my-5">
+        <h1>SHOP</h1>
+      </div>
+      <div class="main-s__p">
+        <p>Explora la línea exclusiva de productos de Mike Tyson. Descubre la calidad que define a un campeón y lleva la fuerza de Tyson a tu entrenamiento.</p>
+      </div>
+      <div class="main-s__products row">
+        <div class="main-s__productos__img col-md-4 mt-5" id="producto1">
+          <img src="../images/tyson-gloves.webp" alt="Tyson Pro Competitions Gloves">
+          <p>Tyson Pro Competitions Gloves <br> $275.00</p>
+          <button onclick="agregarAlCarrito(1, 'Tyson Pro Competitions Gloves', 275.00)">Agregar al Carrito</button>
+        </div>
+        <div class="main-s__productos__img col-md-4 mt-5" id="producto2">
+          <img src="../images/tyson-focus.webp" alt="Tyson Pro Focus Mitts">
+          <p>Tyson Pro Focus Mitts <br> $125.00</p>
+          <button onclick="agregarAlCarrito(2, 'Tyson Pro Focus Mitts', 125.00)">Agregar al Carrito</button>
+        </div>
+        <div class="main-s__productos__img col-md-4 mt-5" id="producto3">
+          <img src="../images/tyson-handwraps.webp" alt="Tyson Pro Hook Series Hand Wraps">
+          <p>Tyson Pro Hook Series Hand Wraps <br> $20.00</p>
+          <button onclick="agregarAlCarrito(3, 'Tyson Pro Hook Series Hand Wraps', 20.00)">Agregar al Carrito</button>
+        </div>
+        <div class="main-s__productos__img col-md-4 my-5" id="producto4">
+          <img src="../images/tyson-standardgloves.webp" alt="Tyson Pro Standard Gloves">
+          <p>Tyson Pro Standard Gloves <br> $175.00</p>
+          <button onclick="agregarAlCarrito(4, 'Tyson Pro Standard Gloves', 175.00)">Agregar al Carrito</button>
+        </div>
+        <div class="main-s__productos__img col-md-4 my-5" id="producto5">
+          <img src="../images/tyson-glovesgold.webp" alt="Tyson Pro Hool Series Glove - Gold">
+          <p>Tyson Pro Hool Series Glove - Gold <br> $60.00</p>
+          <button onclick="agregarAlCarrito(5, 'Tyson Pro Hool Series Glove - Gold', 60.00)">Agregar al Carrito</button>
+        </div>
+        <div class="main-s__productos__img col-md-4 my-5" id="producto6">
+          <img src="../images/tyson-glovesred.webp" alt="Tyson Pro Hool Series Glove - Red">
+          <p>Tyson Pro Hool Series Glove - Red <br> $60.00</p>
+          <button onclick="agregarAlCarrito(6, 'Tyson Pro Hool Series Glove - Red', 60.00)">Agregar al Carrito</button>
+        </div>
+      </div>
+      <div class="main-s__carrito my-5">
+        <h2>Carrito</h2>
+        <ul id="carrito-lista"></ul>
+        <p>Total: $<span id="total">0.00</span></p>
+        <button id="finalizarCompra" onclick="finalizarCompra()">Finalizar Compra</button>
+      </div>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer border-top border-dark border-3 mt-5">
+      <!--2do menu-->
+      <div class="footer__2domenu border-bottom border-dark">
+        <div class="footer__2domenu__h6 mt-3">
+          <h2>MENU</h2>
+        </div>
+        <div class="footer__2domenu__links mt-3 mb-4">
+          <div class="footer__2domenu__links__a">
+            <a href="../index.html">HOME</a>
+          </div>
+          <div class="footer__2domenu__links__a">
+            <a class="text-dark" href="./shop.html">SHOP</a>
+          </div>
+          <div class="footer__2domenu__links__a">
+            <a href="./contact.html">CONTACT</a>
+          </div>
+        </div>
+        
+      </div>
+      <!--redes sociales-->
+      <div class="footer__socialmedia mt-3">
+        <a href="https://www.tiktok.com/@miketyson?is_from_webapp=1&sender_device=pc" target="_blank">
+          <img class="footer__socialmedia__img" src="../images/tiktokcolor.png" alt="Tik Tok">
+        </a>
+        <a href="https://www.instagram.com/miketyson/" target="_blank">
+          <img class="footer__socialmedia__img" src="../images/instagramcolor.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com/MikeTyson?s=20" target="_blank">
+          <img class="footer__socialmedia__img" src="../images/twittercolor.png" alt="Twitter">
+        </a>
+      </div>
+      <!--copyright-->
+      <div class="footer__copyright mt-3">
+        <h6 class="footer__copyright__copy">© 2023 - Mike Tyson | Creado por Lucas Cai Morel</h6>
+      </div>
+    </footer>
+
+    <!--JAVASCRIPT-->
+    <script src="../js/script.js"></script>
+</body>
+</html>

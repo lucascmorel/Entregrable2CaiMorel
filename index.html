@@ -4,11 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Simulador de tienda de Mike Tyson</title>
-</head>
-<body>
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-    <h1><i>Coderhouse - Entregable 1 - JavasCript</i></h1>
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=REM&display=swap" rel="stylesheet">
+
+    <title>Mike Tyosn - HOME</title>
+</head>
+<body class="body-h">
+
+    <!--HEADER-->
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg fixed-top bgnav border-bottom border-dark border-3">
+          <div class="container-fluid nav-item">
+            <!--nombre-->
+            <a class="navbar-brand" href="./index.html">Mike Tyson</a>
+            <!--botón hamburguesa-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--menú-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/shop.html">SHOP</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/contact.html">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    <!--MAIN-->
+    <main class="main-h container mt-5">
+        <div class="main-h__logo my-5">
+            <img src="./images/miketyson-logo.webp" alt="Logo de Mike Tyson">
+        </div>
+        <div class="main-h__h1 my-5">
+            <h1>"Iron" Mike Tyson</h1>
+        </div>
+        <div class="main-h__p my-5">
+            <p class="my-3">Mike Tyson, conocido como 'Iron Mike', es una leyenda viva en el mundo del boxeo. Con una carrera marcada por su impresionante poder de nocaut y su personalidad carismática y controvertida, Tyson se convirtió en uno de los púgiles más icónicos de todos los tiempos. Desde sus comienzos meteóricos como el campeón más joven en la historia de los pesos pesados hasta sus altibajos en y fuera del ring, la vida de Tyson es una historia fascinante de triunfos y adversidades que ha dejado una huella indeleble en la historia del deporte.</p>
+        </div>
+        <div class="main-h__links my-5">
+            <a href="./pages/shop.html">SHOP</a>
+            <a href="./pages/contact.html">CONTACT</a>
+        </div>
+    </main>
 
     <!--JAVASCRIPT-->
     <script src="./js/script.js"></script>
