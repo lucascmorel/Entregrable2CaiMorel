@@ -15,79 +15,112 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=REM&display=swap" rel="stylesheet">
 
+    <!--SWEETALERT2-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <title>Mike Tyosn - CONTACT</title>
 </head>
 <body class="body-c">
 
-    <!--HEADER-->
-    <header class="mb-5">
-        <nav class="navbar navbar-expand-lg fixed-top bgnav border-bottom border-dark border-3">
-          <div class="container-fluid nav-item">
-            <!--nombre-->
-            <a class="navbar-brand" href="../index.html">Mike Tyson</a>
-            <!--botón hamburguesa-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <!--menú-->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="../index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./shop.html">SHOP</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="./contact.html">CONTACT</a>
-                </li>
-              </ul>
-            </div>
+  <!--HEADER-->
+  <header class="mb-5">
+      <nav class="navbar navbar-expand-lg fixed-top bgnav border-bottom border-dark border-3">
+        <div class="container-fluid nav-item">
+          <!--nombre-->
+          <a class="navbar-brand" href="../index.html">Mike Tyson</a>
+          <!--botón hamburguesa-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--menú-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./shop.html">SHOP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./contact.html">CONTACT</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
 
-    <!--MAIN-->
+  <!--MAIN-->
+  <main class="main-c container mt-5">
+    <div class="main-c__h1 my-5">
+        <h1>Contact</h1>
+    </div>
+    <form class="main-c__personaldata__form container mt-5">
+      <div>
+        <img class="mb-5" src="../images/correo (1).png" alt="Mail Icon">
+      </div>
+      <h2 class="mb-5">SUSCRIBITE A NUESTRA NEWSLETTER</h2>
+      <label for="name">NOMBRE</label>
+      <br>
+      <input type="text" name="name" id="name" placeholder="Nombre" required>
+      <br>
+      <label for="phone">TELEFONO</label>
+      <br>
+      <input type="text" name="phone" id="phone" placeholder="Telefono" required>
+      <br>
+      <label for="email">EMAIL</label>
+      <br>
+      <input type="email" name="email" id="email" placeholder="Email" required>
+      <br>
+      <label for="message">MENSAJE</label>
+      <br>
+      <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje" required></textarea>
+      <br>
+      <div>
+        <input class="btn mb-5" type="submit" value="Enviar">
+      </div>
+    </form>
+  </main>
 
-    <!--FOOTER-->
-    <footer class="footer border-top border-dark border-3">
-        <!--2do menu-->
-        <div class="footer__2domenu border-bottom border-dark">
-          <div class="footer__2domenu__h6 mt-3">
-            <h2>MENU</h2>
+  <!--FOOTER-->
+  <footer class="footer border-top border-dark border-3">
+      <!--2do menu-->
+      <div class="footer__2domenu border-bottom border-dark">
+        <div class="footer__2domenu__h6 mt-3">
+          <h2>MENU</h2>
+        </div>
+        <div class="footer__2domenu__links mt-3 mb-4">
+          <div class="footer__2domenu__links__a">
+            <a href="../index.html">HOME</a>
           </div>
-          <div class="footer__2domenu__links mt-3 mb-4">
-            <div class="footer__2domenu__links__a">
-              <a href="../index.html">HOME</a>
-            </div>
-            <div class="footer__2domenu__links__a">
-              <a href="./shop.html">SHOP</a>
-            </div>
-            <div class="footer__2domenu__links__a">
-              <a class="text-dark" href="./contact.html">CONTACT</a>
-            </div>
+          <div class="footer__2domenu__links__a">
+            <a href="./shop.html">SHOP</a>
           </div>
-          
+          <div class="footer__2domenu__links__a">
+            <a class="text-dark" href="./contact.html">CONTACT</a>
+          </div>
         </div>
-        <!--redes sociales-->
-        <div class="footer__socialmedia mt-3">
-          <a href="https://www.tiktok.com/@miketyson?is_from_webapp=1&sender_device=pc" target="_blank">
-            <img class="footer__socialmedia__img" src="../images/tiktokcolor.png" alt="Tik Tok">
-          </a>
-          <a href="https://www.instagram.com/miketyson/" target="_blank">
-            <img class="footer__socialmedia__img" src="../images/instagramcolor.png" alt="Instagram">
-          </a>
-          <a href="https://twitter.com/MikeTyson?s=20" target="_blank">
-            <img class="footer__socialmedia__img" src="../images/twittercolor.png" alt="Twitter">
-          </a>
-        </div>
-        <!--copyright-->
-        <div class="footer__copyright mt-3">
-          <h6 class="footer__copyright__copy">© 2023 - Mike Tyson | Creado por Lucas Cai Morel</h6>
-        </div>
-      </footer>
-      
-    <!--JAVASCRIPT-->
-    <script src="./js/script.js"></script>
+        
+      </div>
+      <!--redes sociales-->
+      <div class="footer__socialmedia mt-3">
+        <a href="https://www.tiktok.com/@miketyson?is_from_webapp=1&sender_device=pc" target="_blank">
+          <img class="footer__socialmedia__img" src="../images/tiktokcolor.png" alt="Tik Tok">
+        </a>
+        <a href="https://www.instagram.com/miketyson/" target="_blank">
+          <img class="footer__socialmedia__img" src="../images/instagramcolor.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com/MikeTyson?s=20" target="_blank">
+          <img class="footer__socialmedia__img" src="../images/twittercolor.png" alt="Twitter">
+        </a>
+      </div>
+      <!--copyright-->
+      <div class="footer__copyright mt-3">
+        <h6 class="footer__copyright__copy">© 2023 - Mike Tyson | Creado por Lucas Cai Morel</h6>
+      </div>
+    </footer>
+    
+  <!--JAVASCRIPT-->
+  <script src="../js/script.js"></script>
 </body>
 </html>

@@ -40,6 +40,22 @@ font-family: 'REM', sans-serif;
 
 /*MAIN*/
 
+  button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transform: scale(1.1);
+  }
+
     /*home*/
     .body-h {
         color: white;
@@ -109,40 +125,54 @@ font-family: 'REM', sans-serif;
         background-attachment: fixed;
     }
 
-    .main-s{
+    .main-s {
       text-align: center;
     }
 
-    .main-s__h1{
+    .main-s__h1 {
       font-size: x-large;
       font-family: 'Bebas Neue', sans-serif;
     }
 
-    .main-s__p{
+    .main-s__p {
       font-size: x-large;
       font-family: 'Bebas Neue', sans-serif;
     }
     
-    .main-s__product{
+    .main-s__product {
       width: 100px;
     }
 
-    .main-s__productos__img{
+    .main-s__productos__img {
       font-size: x-large;
       font-family: 'Bebas Neue', sans-serif;
       padding-top: 20px;
     }
 
-    .main-s__productos__img img{
+    .main-s__productos__img img {
       width: 300px;
       border-radius: 10px;
       box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.484);
     }
 
-    .main-s__carrito{
+    .main-s__carrito {
       font-size: x-large;
       font-family: 'Bebas Neue', sans-serif;
     }
+
+    button.quitar {
+      align-self: center;
+    }
+  
+
+  .carrito-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
 
     /*contact*/
     .body-c {
@@ -155,6 +185,46 @@ font-family: 'REM', sans-serif;
         flex-direction: column;
         min-height: 100vh;
         background-attachment: fixed;
+    }
+
+    .main-c {
+      text-align: center;
+      font-family: 'Bebas Neue', sans-serif;
+    }
+
+    .main-c__h1 {
+      font-size: x-large;
+    }
+
+    .main-c__personaldata__form {
+      width: 800px;
+      font-size: xx-large;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .main-c__personaldata__form img {
+      width: 70px;
+    }
+    
+    .main-c__personaldata__form input {
+      height: 50px;
+    }
+
+    .btn {
+      color: #000000;
+      background-color: #ffffff;
+      font-size: xx-large;
+      border-radius: 5px;
+      transition: transform 0.2s;
+    }
+  
+
+    .btn:hover {
+      color: #ffffff;
+      background-color: #000000;
+      transform: scale(1.1);
     }
 
 /*FOOTER*/
@@ -170,7 +240,7 @@ font-family: 'REM', sans-serif;
     align-items: center;
   }
 
-  .footer__2domenu{
+  .footer__2domenu {
     width: 100%;
     font-size: x-large;
     font-family: 'Bebas Neue', sans-serif;
@@ -180,23 +250,23 @@ font-family: 'REM', sans-serif;
     align-items: center;
   }
 
-  .footer__2domenu__links{
+  .footer__2domenu__links {
     width: 300px;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 
-  .footer__2domenu__links__a{
+  .footer__2domenu__links__a {
     width: 400px;
   }
 
-  .footer__2domenu__links__a a{
+  .footer__2domenu__links__a a {
     color: #fff;
     text-decoration: none;
   }
 
-  .footer__2domenu__links__a a:hover{
+  .footer__2domenu__links__a a:hover {
     color: #fff;
     text-decoration: underline;
   }

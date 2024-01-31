@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=REM&display=swap" rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <title>Mike Tyosn - SHOP</title>
 </head>
 <body class="body-s">
@@ -77,19 +79,19 @@
           <button onclick="agregarAlCarrito(4, 'Tyson Pro Standard Gloves', 175.00)">Agregar al Carrito</button>
         </div>
         <div class="main-s__productos__img col-md-4 my-5" id="producto5">
-          <img src="../images/tyson-glovesgold.webp" alt="Tyson Pro Hool Series Glove - Gold">
-          <p>Tyson Pro Hool Series Glove - Gold <br> $60.00</p>
+          <img src="../images/tyson-glovesgold.webp" alt="Tyson Pro Hook Series Glove - Gold">
+          <p>Tyson Pro Hook Series Glove - Gold <br> $60.00</p>
           <button onclick="agregarAlCarrito(5, 'Tyson Pro Hool Series Glove - Gold', 60.00)">Agregar al Carrito</button>
         </div>
         <div class="main-s__productos__img col-md-4 my-5" id="producto6">
-          <img src="../images/tyson-glovesred.webp" alt="Tyson Pro Hool Series Glove - Red">
-          <p>Tyson Pro Hool Series Glove - Red <br> $60.00</p>
+          <img src="../images/tyson-glovesred.webp" alt="Tyson Pro Hook Series Glove - Red">
+          <p>Tyson Pro Hook Series Glove - Red <br> $60.00</p>
           <button onclick="agregarAlCarrito(6, 'Tyson Pro Hool Series Glove - Red', 60.00)">Agregar al Carrito</button>
         </div>
       </div>
       <div class="main-s__carrito my-5">
         <h2>Carrito</h2>
-        <ul id="carrito-lista"></ul>
+        <div id="carrito-lista"></div>
         <p>Total: $<span id="total">0.00</span></p>
         <button id="finalizarCompra" onclick="finalizarCompra()">Finalizar Compra</button>
       </div>
